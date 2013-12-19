@@ -1,0 +1,1060 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>For a Better World! Share the Knowledge</title>
+		<link rel="stylesheet" type="text/css" href="Resources/style.css" />
+		<script type="text/javascript" src="Resources/scripts.js" ></script>
+		<script type="text/javascript" src="Resources/jquery.js" ></script>
+		<!-- Bootstrap -->
+		<link href="Resources/css/bootstrap.css" rel="stylesheet">
+		<script type="text/javascript" src="Resources/js/bootstrap.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div id="headerCont" class="row">
+				<a href="index.html"><img id="logo" title="For a Better World! Share the Knowledge" alt="ForABetterWorld" src="Resources/Images/holding-ideas-around-the-world.jpg" class="col-md-4 visible-md visible-lg"/></a>
+				
+				<div id="menuSearchCol" class="col-md-7">
+							<div id="optionMenu" class="btn-group nav">
+								<button id="homeOpt" class="btn btn-default"><a href="index.html">HOME</a></button>
+								<button id="informaticOpt" class="btn btn-default"><a href="#informaticInfo">INFORMATIC</a></button>
+								<button id="architectureOpt" class="btn btn-default"><a href="#architectureInfo">ARCHITECTURE</a></button>
+								<button id="commercialOpt" class="btn btn-default"><a href="#commercialInfo">COMMERCIAL</a></button>
+								<button id="houseServiceOpt" class="btn btn-default"><a href="#houseServiceInfo">HOUSE SERVICE</a></button>
+							</div>
+					
+					<nav id="searchNav" class="navbar navbar-default" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						    </button>
+						    <a class="navbar-brand visible-xs" href="#">Search</a>
+						</div>
+						  
+						<div class="collapse navbar-collapse" id="navbar-collapse-1">
+						  	<form id="searchForm" class="navbar-form navbar-left" role="search">
+								<fieldset>
+									<div id="searchBar" class="row">
+										<div class="col-md-4">
+											<input id="searchBarInput" class="form-control" type="search" id="bar" placeholder="Search"/>
+										</div>
+										<div class="searchOption col-md-3">
+											<select name="province" id="province" class="form-control">
+												<option value="barcelona">Barcelona</option>
+												<option value="entre_rios">Entre Rios</option>
+												<option value="london">London</option>
+											</select>
+										</div>
+										<div class="searchOption col-md-3">
+											<select name="category" id="category" class="form-control">
+												<option value="informatic">Informatic</option>
+												<option value="architecture">Architecture</option>
+												<option value="commercial">Commercial</option>
+												<option value="house_services">House Services</option>
+											</select>
+										</div>
+										<div class="col-md-2">
+											<input type="submit" class="btn btn-info" value="Search"/>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</nav>
+				</div>
+				
+				<div class="col-md-3">
+					<div id="loginCont" class="row">
+						<div class="col-md-12">
+							<nav id="loginNav" class="navbar navbar-default" role="navigation">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header">
+								    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-2">
+								        <span class="sr-only">Toggle navigation</span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								        <span class="icon-bar"></span>
+								    </button>
+								    <a class="navbar-brand visible-xs" href="#">Login</a>
+								</div>
+								  
+								<div class="collapse navbar-collapse" id="navbar-collapse-2">
+									<form class="navbar-form navbar-left" role="search">
+										<fieldset>
+											<div id="loginBorder" class="row">
+												<div id="loginDataCont" class="col-md-10">
+													<div id="userInfo" class="loginInfo">
+														<div class="row">
+															<span class="col-md-8">User</span>
+															<input type="text" id="userName" name="userName" class="col-md-8" />
+														</div>
+													</div>
+													
+													<div id="passInfo" class="loginInfo">
+														<div class="row">
+															<span class="col-md-8">Password</span>
+															<input type="password" id="userPass" name="userPass" class="col-md-8" />
+														</div>
+													</div>
+												</div>
+												
+												<div class="col-md-2">
+													<input type="image" src="Resources/Images/loginImg.png" alt="Login" id="loginBut" />
+												</div>	
+											</div>
+										</fieldset>
+									</form>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="infoCont" class="row">
+				<div id="userOption" class="col-md-2 btn-group-vertical nav">
+					<!--<button class="btn btn-default">Information</button>-->
+					<button id="userProfileOpt" class="btn btn-default"><a id="profielInfoBtnLink" href="#profileInfo">Edit Profile</a></button>
+					<button id="userOffersOpt" class="btn btn-success"><a class="activeLink" href="#yourOffersInfo">Offers</a></button>
+					<button id="userRequestsOpt" class="btn btn-warning"><a class="activeLink" href="#yourRequestsInfo">Requests</a></button>
+				</div>
+				
+				<div id="mainContainer" class="col-md-9">
+					<div id="optionButtonsCont">
+					</div>
+					
+					<div id="elementsCont">
+						<!-- A way to display the content in one page: creating invisible divs that will be shown when they are needed. -->
+						<div class="tab-content">
+							<div id="homeInfo" class="tab-pane fade in active">
+								<div id="siteTitleHeader" class="row">
+									<div class="col-md-12">
+										<h1 class="text-center">Share Your Knowledge for a Better World!</h1>
+									</div>
+								</div>
+								
+								<div id="siteIntroText" class="row">
+									<div class="col-md-12">
+										<p class="text-center lead"><span class="text-success">Share Knowledge</span> is a site where you can request help from other people specialized in several kind of jobs, at the same time you can give your hand to some people that is needing help in the fields where you have experience or you are specialized!</p>
+										</div>
+								</div>
+								
+								<div id="siteInvitation"class="row">
+									<div class="col-md-12">
+										
+										<!-- Modal -->
+										<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="Register in ShareKnowledge" aria-hidden="true">
+										  <div class="modal-dialog">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										        <h4 class="modal-title" id="myModalLabel">Register, log in and start Sharing your Knowledge</h4>
+										      </div>
+										      <div class="modal-body">
+										      	<form>
+										      		<div class="row">
+										      			<div class="col-md-12">
+										      				<div class="row">
+										      					<div class="col-md-12">
+										      						<input id="regUserName" class="form-control" name="regUserName" type="text" placeholder="Username" />
+										      					</div>
+										      				</div>
+										      				
+										      				<div class="row">
+										      					<div class="col-md-12">
+										      						<input id="regUserPass" class="form-control regUserBottCont" name="regUserPass" type="password" placeholder="Password" />
+										      					</div>
+										      				</div>
+										      			
+										      				<div class="row">
+										      					<div class="col-md-12">
+										      						<input id="regUserMail" class="form-control regUserBottCont" name="regUserMail" type="email" placeholder="E-Mail" />
+										      					</div>
+										      				</div>
+										      			
+										      				<div class="row">
+										      					<div class="col-md-12">
+																	<select name="regUserProvince" id="regUserProvince" class="form-control regUserBottCont ">
+																		<option value="barcelona">Barcelona</option>
+																		<option value="entre_rios">Entre Rios</option>
+																		<option value="london">London</option>
+																	</select>
+																</div>	
+										      				</div>
+										      				
+											      			<div class="row">
+											      				<div class="col-md-12">
+											      					<input id="registerUserButt" type="submit" class="btn btn-primary" value="Register" />
+											      				</div>
+											      			</div>
+											      		</div>
+										      		</div>
+										      	</form>
+										      </div>
+										      <div class="modal-footer">
+										        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										      </div>
+										    </div><!-- /.modal-content -->
+										  </div><!-- /.modal-dialog -->
+										</div><!-- /.modal -->
+										
+										<h3 class="text-center">What are you waiting for? <small><strong><a id="registerLink" data-toggle="modal" data-target="#modalRegister">Join us</a></strong>, join this enormous knowledge community</small></h3>
+									</div>
+								</div>
+							</div>
+							
+							<div id="profileInfo" class="tab-pane fade">
+								<div class="row">
+									<div class="col-md-12">
+										<form>
+											<fieldset>
+												<div class="row fieldsRow">
+													<div class="col-md-4">
+														<div class="row">
+															<div class="col-md-6">
+																<p>Username</p>
+															</div>
+															
+															<div class="col-md-6">
+																<input type="text" name="usernameProfile" value="yourUsername" class="form-control"/>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-4">
+														<div class="row">
+															<div class="col-md-6">
+																<p>Password</p>
+															</div>
+															
+															<div class="col-md-6">
+																<input type="password" name="passProfile" class="form-control"/>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-4">
+														<div class="row">
+															<div class="col-md-6">
+																<p>Email</p>
+															</div>
+															
+															<div class="col-md-6">
+																<input type="email" name="emailProfile" value="your@mail.com" class="form-control"/>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="row fieldsRow">
+													<div class="col-md-4">
+														<div class="row">
+															<div class="col-md-6">
+																<p>First Name</p>
+															</div>
+															
+															<div class="col-md-6">
+																<input type="text" name="firstnameProfile" value="Your name" class="form-control"/>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-4">
+														<div class="row">
+															<div class="col-md-6">
+																<p>Last Name</p>
+															</div>
+															
+															<div class="col-md-6">
+																<input type="text" value="yourLastName" name="lastnameProfile" class="form-control"/>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-4">
+														<div class="row">
+															<div class="col-md-6">
+																<p>Country</p>
+															</div>
+															
+															<div class="col-md-6">
+																<select name="provinceProfile" class="form-control">
+																		<option value="barcelona">Barcelona</option>
+																		<option value="entre_rios">Entre Rios</option>
+																		<option value="london">London</option>
+																		<option value="others">Others</option>
+																	</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="row fieldsRow">
+													<div class="col-md-7">
+														<textarea class="form-control" placeholder="Talk about yourself..."></textarea>
+													</div>
+													
+													<div class="col-md-5">
+														<textarea class="form-control" placeholder="Your knowledge in general"></textarea>
+													</div>
+												</div>
+												
+												<div class="row">
+													<div class="col-md-12 right">
+														<input type="submit" value="Save Changes" class="form-control btn-success"/>
+													</div>
+												</div>
+											</fieldset>
+										</form>
+									</div>
+								</div>
+							</div>
+							
+							<!-- The content can be programmed to change dynamically depending on what has been clicked -->
+							<div id="informaticInfo" class="tab-pane fade">
+								<h3>Informatic</h3>
+								<ul id="informaticTab" class="nav nav-tabs">
+									<li class="active"><a href="#informaticOffers">Offers</a></li>
+									<li><a href="#informaticRequests">Requests</a></li>
+								</ul>
+								
+								<div class="tab-content">
+									<div id="informaticOffers" class="optionMenuInfo tab-pane fade in active">
+										<div class="row">
+											
+										</div>
+										
+										<div class="row">
+											<div class="col-md-12 mainElementCont">
+												<div class="row">
+													<div class="col-md-3">
+														<div class="row">
+															<p class="col-md-12 text-center clasiffText">Classification:</p>
+														</div>
+														<div class="row">
+															<img class="center-block starsRank5" alt="user_stars_classification" />
+														</div>
+														
+														<div class="row userInfoCont">
+															<div class="col-md-12">
+																<div class="row">
+																	<div class="col-md-5">
+																		<img class="elementUserImg visible-md visible-lg" alt="user_image" src="Resources/Images/user3Img.jpg"/>
+																	</div>
+																	<div class="col-md-7 userDataContSec">
+																		<div class="row userDataCont">
+																			<div class="col-md-12">
+																				<p class="userData">Stephano</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Informatic</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">London</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-9">
+														<div class="elementContainer contTitle">
+															<div class="row contTitleSec">
+																<div class="row">
+																	<div class="col-md-12">
+																		<h4 class="contTitleText">Best Game Programmer EVER!</h4>
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="separatorLine"></div>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="row">
+																<div class="col-md-9 elementDescripCont">
+																	<p class="elementDescrip">I'm offering my services as a game programmer, I have experience because I've done a lot, A LOT of projects with friends and others with people around the world. Our games had a good aspect, all of them were downloaded lot of times. Well, not much more to say, if you are interested in any help I can lend a hand, for details put in contact with me by mail or whatever. Best Regards from the BEST GAME PROGRAMMER EVER!</p>
+																</div>
+																
+																<div class="col-md-2">
+																	<button class="btn btn-primary mailButton">Send Mail</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-md-12 mainElementCont">
+												<div class="row">
+													<div class="col-md-3">
+														<div class="row">
+															<p class="col-md-12 text-center clasiffText">Classification:</p>
+														</div>
+														<div class="row">
+															<img class="center-block starsRank1" alt="user_stars_classification" src="" />
+														</div>
+														
+														<div class="row userInfoCont">
+															<div class="col-md-12">
+																<div class="row">
+																	<div class="col-md-5">
+																		<img class="elementUserImg visible-md visible-lg" alt="user_image" src="Resources/Images/user2Img.jpg"/>
+																	</div>
+																	<div class="col-md-7 userDataContSec">
+																		<div class="row userDataCont">
+																			<div class="col-md-12">
+																				<p class="userData">AllTimid</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Informatic</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Barcelona</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-9">
+														<div class="elementContainer contTitle">
+															<div class="row contTitleSec">
+																<div class="row">
+																	<div class="col-md-12">
+																		<h4 class="contTitleText">Ehm... My offer</h4>
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="separatorLine"></div>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="row">
+																<div class="col-md-9 elementDescripCont">
+																	<p class="elementDescrip">I... offer my services in maintenance of computers and dedicated servers. For more info mail me please. Thank you.</p>
+																</div>
+																
+																<div class="col-md-2">
+																	<button class="btn btn-primary mailButton">Send Mail</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="informaticRequests" class="optionMenuInfo fade tab-pane">
+										<div class="row">
+											<div class="col-md-12 mainElementCont">
+												<div class="row">
+													<div class="col-md-3">
+														<div class="row">
+															<p class="col-md-12 text-center clasiffText">Classification:</p>
+														</div>
+														<div class="row">
+															<img class="center-block starsRank4" alt="user_stars_classification" />
+														</div>
+														
+														<div class="row userInfoCont">
+															<div class="col-md-12">
+																<div class="row">
+																	<div class="col-md-5">
+																		<img class="elementUserImg visible-md visible-lg" alt="user_image" src="Resources/Images/user4Img.jpg"/>
+																	</div>
+																	<div class="col-md-7 userDataContSec">
+																		<div class="row userDataCont">
+																			<div class="col-md-12">
+																				<p class="userData">TheIdealOne</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Informatic</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Entre Rios</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-9">
+														<div class="elementContainer contTitle">
+															<div class="row contTitleSec">
+																<div class="row">
+																	<div class="col-md-12">
+																		<h4 class="contTitleText">3D Designer</h4>
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="separatorLine"></div>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="row">
+																<div class="col-md-9 elementDescripCont">
+																	<p class="elementDescrip">I'm needing a 3D models designer and animator for a big project.</p>
+																</div>
+																
+																<div class="col-md-2">
+																	<button class="btn btn-primary mailButton">Send Mail</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div id="architectureInfo" class="tab-pane fade">
+								<h3>Architecture</h3>
+								<ul id="architectureTab" class="nav nav-tabs">
+									<li class="active"><a href="#architectureOffers">Offers</a></li>
+									<li><a href="#architectureRequests">Requests</a></li>
+								</ul>
+								
+								<div class="tab-content">
+									<div id="architectureOffers" class="optionMenuInfo tab-pane fade in active">
+										<h3>There are no Offers yet!</h3>
+									</div>
+									<div id="architectureRequests" class="optionMenuInfo fade tab-pane">
+										<h3>There are no Requests yet!</h3>
+									</div>
+								</div>
+							</div>
+							
+							<div id="commercialInfo" class="tab-pane fade">
+								<h3>Commercial</h3>
+								<ul id="commercialTab" class="nav nav-tabs">
+									<li class="active"><a href="#commercialOffers">Offers</a></li>
+									<li><a href="#commercialRequests">Requests</a></li>
+								</ul>
+								
+								<div class="tab-content">
+									<div id="commercialOffers" class="optionMenuInfo tab-pane fade in active">
+										<h3>There are no Offers yet!</h3>
+									</div>
+									<div id="commercialRequests" class="optionMenuInfo fade tab-pane">
+										<div class="row">
+											<div class="col-md-12 mainElementCont">
+												<div class="row">
+													<div class="col-md-3">
+														<div class="row">
+															<p class="col-md-12 text-center clasiffText">Classification:</p>
+														</div>
+														<div class="row">
+															<img class="center-block starsRank4" alt="user_stars_classification" />
+														</div>
+														
+														<div class="row userInfoCont">
+															<div class="col-md-12">
+																<div class="row">
+																	<div class="col-md-5">
+																		<img class="elementUserImg visible-md visible-lg" alt="user_image" src="Resources/Images/user4Img.jpg"/>
+																	</div>
+																	<div class="col-md-7 userDataContSec">
+																		<div class="row userDataCont">
+																			<div class="col-md-12">
+																				<p class="userData">TheIdealOne</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Commercial</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Entre Rios</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-9">
+														<div class="elementContainer contTitle">
+															<div class="row contTitleSec">
+																<div class="row">
+																	<div class="col-md-12">
+																		<h4 class="contTitleText">Marketing group</h4>
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="separatorLine"></div>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="row">
+																<div class="col-md-9 elementDescripCont">
+																	<p class="elementDescrip">Well, I'm preparing a great project for the 3D media area and I would like to have a group of people that have experience in marketing and publicity for this kind of things. At least I would gladly accept some ideas :)</p>
+																</div>
+																
+																<div class="col-md-2">
+																	<button class="btn btn-primary mailButton">Send Mail</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-md-12 mainElementCont">
+												<div class="row">
+													<div class="col-md-3">
+														<div class="row">
+															<p class="col-md-12 text-center clasiffText">Classification:</p>
+														</div>
+														<div class="row">
+															<img class="center-block starsRank2" alt="user_stars_classification" />
+														</div>
+														
+														<div class="row userInfoCont">
+															<div class="col-md-12">
+																<div class="row">
+																	<div class="col-md-5">
+																		<img class="elementUserImg visible-md visible-lg" alt="user_image" src="Resources/Images/user5Img.jpg"/>
+																	</div>
+																	<div class="col-md-7 userDataContSec">
+																		<div class="row userDataCont">
+																			<div class="col-md-12">
+																				<p class="userData">TopMaxed</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Commercial</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">Barcelona</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-9">
+														<div class="elementContainer contTitle">
+															<div class="row contTitleSec">
+																<div class="row">
+																	<div class="col-md-12">
+																		<h4 class="contTitleText">Planification tips</h4>
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="separatorLine"></div>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="row">
+																<div class="col-md-9 elementDescripCont">
+																	<p class="elementDescrip">Hi everyone, I'm here because I want to prepare a marketing campaign for my product, but I'm not experienced. Because of that I want some tips from people that studied this or have experiencie. Thank you very much.</p>
+																</div>
+																
+																<div class="col-md-2">
+																	<button class="btn btn-primary mailButton">Send Mail</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div id="houseServiceInfo" class="tab-pane fade">
+								<h3>House Services</h3>
+								<ul id="houseServiceTab" class="nav nav-tabs">
+									<li class="active"><a href="#houseServiceOffers">Offers</a></li>
+									<li><a href="#houseServiceRequests">Requests</a></li>
+								</ul>
+								
+								<div class="tab-content">
+									<div id="houseServiceOffers" class="optionMenuInfo tab-pane fade in active">
+										<div class="row">
+											<div class="col-md-12 mainElementCont">
+												<div class="row">
+													<div class="col-md-3">
+														<div class="row">
+															<p class="col-md-12 text-center clasiffText">Classification:</p>
+														</div>
+														<div class="row">
+															<img class="center-block starsRank5" alt="user_stars_classification" />
+														</div>
+														
+														<div class="row userInfoCont">
+															<div class="col-md-12">
+																<div class="row">
+																	<div class="col-md-5">
+																		<img class="elementUserImg visible-md visible-lg" alt="user_image" src="Resources/Images/user6Img.jpg"/>
+																	</div>
+																	<div class="col-md-7 userDataContSec">
+																		<div class="row userDataCont">
+																			<div class="col-md-12">
+																				<p class="userData">ConsuelaMe</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">House Service</p>
+																			</div>
+																		</div>
+																		
+																		<div class="row userData">
+																			<div class="col-md-12">
+																				<p class="userData">London</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="col-md-9">
+														<div class="elementContainer contTitle">
+															<div class="row contTitleSec">
+																<div class="row">
+																	<div class="col-md-12">
+																		<h4 class="contTitleText">Cleaning Tips and Tricks</h4>
+																	</div>
+																</div>
+																
+																<div class="row">
+																	<div class="col-md-12">
+																		<div class="separatorLine"></div>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="row">
+																<div class="col-md-9 elementDescripCont">
+																	<p class="elementDescrip">For people from UK or the world, I'm here to share with all of you different tricks and tips for cleaning everything with less effort, if you want some more information mail me and rank me, please ;D.</p>
+																</div>
+																
+																<div class="col-md-2">
+																	<button class="btn btn-primary mailButton">Send Mail</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="houseServiceRequests" class="optionMenuInfo fade tab-pane">
+										<h3>There are no Requests yet!</h3>
+									</div>
+								</div>
+							</div>
+							
+							<div id="yourOffersInfo" class="tab-pane fade">
+								<div class="row firstUserInfo">
+									<div class="col-md-10">
+										<h3>Your Offers</h3>
+									</div>
+									
+									<div class="col-md-2">
+										<button id="createOfferBtn" class="btn btn-success addOfferRequest" data-toggle="modal" data-target="#modalOfferRequest">Create Offer</button>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-12 mainElementCont">
+										<div class="row">
+											<div class="col-md-3">
+												<div class="row">
+													<p class="col-md-12 text-center clasiffText">Classification:</p>
+												</div>
+												<div class="row">
+													<img class="center-block starsRank3" alt="user_stars_classification" />
+												</div>
+												
+												<div class="row userInfoCont">
+													<div class="col-md-12">
+														<div class="row">
+															<div class="col-md-5">
+																<img class="elementUserImg visible-md visible-lg" alt="user_image" src="Resources/Images/user1Img.jpg" />
+															</div>
+															<div class="col-md-7 userDataContSec">
+																<div class="row userDataCont">
+																	<div class="col-md-12">
+																		<p class="userData">You</p>
+																	</div>
+																</div>
+																
+																<div class="row userData">
+																	<div class="col-md-12">
+																		<p class="userData">Informatic</p>
+																	</div>
+																</div>
+																
+																<div class="row userData">
+																	<div class="col-md-12">
+																		<p class="userData">Barcelona</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+											<div class="col-md-9">
+												<div class="elementContainer contTitle">
+													<div class="row contTitleSec">
+														<div class="row">
+															<div class="col-md-12">
+																<h4 class="contTitleText">Game Programmer</h4>
+															</div>
+														</div>
+														
+														<div class="row">
+															<div class="col-md-12">
+																<div class="separatorLine"></div>
+															</div>
+														</div>
+													</div>
+													
+													<div class="row">
+														<div class="col-md-9 elementDescripCont">
+															<p class="elementDescrip">Here I lend my hand to those that are needing a Game Programmer that doesn't have a lot of experience, but is good for logic, ideas and learning new languages, engines or methods to design a game referring to the source code.</p>
+														</div>
+														
+														<div class="col-md-2">
+															<button class="btn btn-primary mailButton disabled">Send Mail</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-md-12">
+												<div class="userOffReqSeparatorLine"></div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<span id="interestedInOffer1" data-toggle="tooltip" data-placement="top" title data-original-title="You have 1 interested person!" class="interestedBadge badge pull-right">1</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div id="yourRequestsInfo" class="tab-pane fade">
+								<div class="row firstUserInfo">
+									<div class="col-md-10">
+										<h3>Your Requests</h3>
+									</div>
+									
+									<div class="col-md-2">
+										<button id="createRequestBtn" class="btn btn-warning addOfferRequest" data-toggle="modal" data-target="#modalOfferRequest">Create a Request</button>
+									</div>
+								</div>
+								
+								<div class="row">
+									<h4 class="noInfoMessage">You don't have requests for this knowledgeable community.</h4>
+								</div>
+							</div>
+							
+							<!-- Modal -->
+							<div class="modal fade" id="modalOfferRequest" tabindex="-1" role="dialog" aria-labelledby="Register in ShareKnowledge" aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							        <h4 class="modal-title" id="offerRequestTitle"></h4>
+							      </div>
+							      <div id="offerRequestBody" class="modal-body">
+							      	 <form>
+							      		<div class="row">
+							      			<div class="col-md-12">
+							      				<div class="row">
+							      					<div class="col-md-12">
+							      						<input id="offerReqTitle" class="form-control" name="offerReqTitle" type="text" placeholder="Title" />
+							      					</div>
+							      				</div>
+							      				
+							      				<div class="row">
+							      					<div class="col-md-12">
+							      						<textarea id="offerReqDescrip" class="form-control regUserBottCont" name="offerReqDescrip"></textarea>
+							      					</div>
+							      				</div>
+							      			
+							      				<div class="row">
+							      					<div class="col-md-12">
+														<select name="offerReqClassif" id="offerReqClassif" class="form-control regUserBottCont">
+															<option value="informatic">Informatic</option>
+															<option value="architecture">Architecture</option>
+															<option value="commercial">Commercial</option>
+															<option value="houseService">House Services</option>
+															<option value="others">Others</option>
+														</select>
+													</div>	
+							      				</div>
+							      				
+								      			<div class="row">
+								      				<div class="col-md-12">
+								      					<input id="offerReqCreateBtn" type="submit" value="Create" />
+								      				</div>
+								      			</div>
+								      		</div>
+							      		</div>
+							      	</form>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							      </div>
+							    </div><!-- /.modal-content -->
+							  </div><!-- /.modal-dialog -->
+							</div><!-- /.modal -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				//Tabs Activation
+				//--Menu Tabs				
+				$('#optionMenu #informaticOpt').click(function (e) {
+				  e.preventDefault();
+				  $('a[href="#informaticInfo"]').tab('show');
+				});
+				
+				$('#optionMenu #architectureOpt').click(function (e) {
+				  e.preventDefault();
+				  $('a[href="#architectureInfo"]').tab('show');
+				});
+				
+				$('#optionMenu #commercialOpt').click(function (e) {
+				  e.preventDefault();
+				  $('a[href="#commercialInfo"]').tab('show');
+				});
+				
+				$('#optionMenu #houseServiceOpt').click(function (e) {
+				  e.preventDefault();
+				  $('a[href="#houseServiceInfo"]').tab('show');
+				});
+				
+				$('#userOption #userProfileOpt').click(function (e) {
+				  e.preventDefault();
+				  $('a[href="#profileInfo"]').tab('show');
+				});
+				
+				//--User Menu Tabs
+				$('#userOption #userOffersOpt').click(function (e) {
+				  e.preventDefault();
+				  $('a[href="#yourOffersInfo"]').tab('show');
+				});
+				
+				$('#userOption #userRequestsOpt').click(function (e) {
+				  e.preventDefault();
+				  $('a[href="#yourRequestsInfo"]').tab('show');
+				});
+				
+				//--General Offers and Requests tabs
+				$('#informaticTab a').click(function (e) {
+				  e.preventDefault();
+				  $(this).tab('show');
+				});
+				
+				$('#architectureTab a').click(function (e) {
+				  e.preventDefault();
+				  $(this).tab('show');
+				});
+				
+				$('#commercialTab a').click(function (e) {
+				  e.preventDefault();
+				  $(this).tab('show');
+				});
+				
+				$('#houseServiceTab a').click(function (e) {
+				  e.preventDefault();
+				  $(this).tab('show');
+				});
+				
+				//Tooltip
+				$('#interestedInOffer1').tooltip();
+				
+				//Stars Classification
+				createStars();
+				
+				//Offer Request title
+				$('#createRequestBtn').click(function (e) {
+				  changeModalTitle(this);
+				});
+				
+				$('#createOfferBtn').click(function (e) {
+				  changeModalTitle(this);
+				});
+			});
+		</script>
+	</body>
+</html>
